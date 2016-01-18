@@ -27,9 +27,9 @@ module.exports = function(app) {
 		// create a todo, information comes from AJAX request from Angular
 		console.log(req);
 		Router.create({
-			ssid : req.body.ssid,
-			bssid : req.body.bssid,
-			password : req.body.password
+			ssid : req.body[0].ssid,
+			bssid : req.body[0].bssid,
+			password : req.body[0].password
 		}, function(err, todo) {
 			if (err)
 				res.send(err);
