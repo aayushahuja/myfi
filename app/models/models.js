@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 var router_schema = new Schema({
 	ssid : {type : String, default: ''},
