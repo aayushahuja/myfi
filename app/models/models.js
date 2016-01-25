@@ -16,7 +16,7 @@ var user_schema = new Schema({
 	password : {type : String, default: ''},
 });
 
-var User = mongoose.model('User', router_schema);
+var User = mongoose.model('User', user_schema);
 
 module.exports = {
 	Router : Router,
